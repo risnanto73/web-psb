@@ -1,0 +1,719 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--color-font);
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    text-decoration: none;
+}
+
+
+:root {
+    --color-bakground-white: #FFFFFF;
+    --color-blue: #2081E2;
+    --color-green: #3ce260;
+    --color-font: #434d56;
+    --bg-color-feed: rgba(143, 134, 134, 0.319);
+
+    --transition: all 400ms ease;
+}
+
+body {
+    background-color: #b2cdf6;
+}
+
+/* ========== NAVBAR ========== */
+
+.navbar-list {
+    background: var(--color-bakground-white);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.navbar-item {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+.toggle {
+    margin: 0 20px;
+    list-style-type: none;
+    display: none;
+}
+
+.navbar-link {
+    font-weight: bold;
+}
+
+.navbar-link:hover {
+    color: black;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 50px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.navbar-button-login {
+    font-size: 1em;
+    background: var(--color-blue);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.navbar-button-login:hover {
+    background: transparent;
+    border-color: var(--color-green);
+    color: var(--color-green);
+}
+
+.navbar-button-register {
+    font-size: 1em;
+    background: var(--color-green);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--color-font);
+}
+
+.navbar-button-register:hover {
+    color: white;
+    background-color: var(--color-blue);
+}
+
+@media screen and (max-width:1024px) {
+    .navbar-list {
+        flex-wrap: wrap;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .navbar-item {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .navbar-button {
+        display: block;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 912px) {
+    .navbar-list {
+        flex-wrap: wrap;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .navbar-item {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .navbar-button {
+        display: block;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-list {
+        flex-wrap: wrap;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .navbar-item {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .navbar-button-login {
+        display: block;
+    }
+
+    .navbar-button-register {
+        display: block;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .navbar-list {
+        flex-wrap: wrap;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .navbar-item {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .navbar-button-login {
+        display: block;
+    }
+
+    .navbar-button-register {
+        display: block;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+/* ========== END NAVBAR ========== */
+
+/* ========== HEADER ========== */
+.header {
+    padding: 70px 50px;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo-idn {
+    flex: 1;
+    text-align: center;
+    margin: auto;
+}
+
+.logo-img {
+    width: 750px;
+    border-radius: 3%;
+}
+
+
+.big-heading {
+    flex: 1;
+    margin-left: 30px;
+    margin: auto;
+}
+
+.big-heading h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.big-heading p {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    color: var(--color-font);
+}
+
+.explore-button {
+    background: #2081E2;
+    border: none;
+    padding: 20px 50px;
+    border-radius: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.explore-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.explore-button:hover {
+    background: #3ce260;
+}
+
+@media screen and (max-width:1440px) {
+
+    .logo-img {
+        width: 700px;
+        border-radius: 3%;
+        margin: 30px;
+    }
+
+    .big-heading {
+        padding: 10px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .explore-button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .big-heading {
+        margin-left: 30px;
+    }
+
+    .big-heading p {
+        text-align: justify;
+    }
+
+    .explore-button {
+        background: #2081E2;
+        border: none;
+        padding: 20px 50px;
+        border-radius: 12px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width: 912px) {
+
+    .header-container {
+        flex-direction: column;
+    }
+
+
+    .big-heading {
+        margin: 0;
+        text-align: center;
+    }
+
+    .logo-idn {
+        margin-top: 50px;
+    }
+
+    .logo-img {
+        width: 400px;
+    }
+
+    .big-heading h1 {
+        margin-top: 30px;
+        font-size: 3em;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: black;
+        text-align: center;
+    }
+
+    .big-heading p {
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        color: var(--color-font);
+        text-align: justify;
+    }
+
+    .explore-button {
+        background: #2081E2;
+        border: none;
+        padding: 20px 50px;
+        border-radius: 12px;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .explore-button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .explore-button:hover {
+        background: #3ce260;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .navbar-list {
+        margin: 0px;
+    }
+
+    .header {
+        padding: 0px;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .big-heading {
+        margin: 0;
+        text-align: center;
+    }
+
+    .big-heading p {
+        padding: 10px;
+    }
+
+    .logo-idn {
+        display: none;
+    }
+
+
+}
+
+/* ========== END HEADER ========== */
+
+/* ========== SYARAT PENDAFTARAN ========== */
+.collection {
+    background: var(--color-bakground-white);
+    margin-top: 30px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.collection h2 {
+    color: black;
+    font-size: 2.5em;
+    margin: 0px 0px 0px 20px;
+}
+
+.collection h6 {
+    color: var(--color-font);
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.collection-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--bg-color-feed);
+}
+
+.list-persyaratan {
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+}
+
+* .activity-feed {
+    padding: 30px;
+    list-style: none;
+    text-align: start;
+    font-size: large;
+}
+
+* .activity-feed .feed-item {
+    position: relative;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    margin-top: 20px;
+    text-align: justify;
+    color: var(--color-font);
+    border-left: 3px solid var(--color-bakground-white);
+}
+
+* .activity-feed .feed-item:last-child {
+    border-color: transparent;
+}
+
+* .activity-feed .feed-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #177dff;
+}
+
+* .feed-item-default::after {
+    background: #1a2035 !important;
+}
+
+* .feed-item-primary::after {
+    background: #1572e8 !important;
+}
+
+* .feed-item-secondary::after {
+    background: #6861ce !important;
+}
+
+* .feed-item-success::after {
+    background: #31ce36 !important;
+}
+
+* .feed-item-danger::after {
+    background: #f25961 !important;
+}
+
+* .feed-item-info::after {
+    background: #48abf7 !important;
+}
+
+* .feed-item-warning::after {
+    background: #ffad46 !important;
+}
+
+* .activity-feed .feed-item .date {
+    display: block;
+    position: relative;
+    top: -5px;
+    color: #8c96a3;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+* .activity-feed .feed-item .text {
+    position: relative;
+    top: -3px;
+}
+
+.logo-list {
+    flex: 1;
+    text-align: center;
+    margin: auto;
+}
+
+.list-img {
+    width: 600px;
+    padding: 10px;
+    border-radius: 3%;
+}
+
+@media screen and (max-width : 1024px) {
+    .list-persyaratan {
+        text-align: justify;
+        flex: 25;
+    }
+
+    .activity-feed {
+        padding: 0px;
+    }
+
+    .list-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .list-persyaratan {
+        text-align: start;
+        flex: 25;
+    }
+
+    .activity-feed {
+        padding: 0px;
+    }
+
+    .list-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .list-persyaratan {
+        text-align: start;
+        flex: 25;
+    }
+
+    .activity-feed {
+        padding: 0px;
+    }
+
+    .list-img {
+        display: none;
+    }
+
+}
+
+/* ========== END SYARAT PENDAFATARAN ========== */
+
+/* ========== STATUS KELULUSAN ==========  */
+.collection-skelulusan {
+    background: var(--color-bakground-white);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-cek {
+    background-color: #123261;
+    color: var(--color-bakground-white);
+    padding: 15px;
+    border-radius: 15px;
+    width: 830px;
+    display: flex;
+    border: solid;
+    justify-content: center;
+}
+
+.card-cek h2 {
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+.input-name {
+    margin-top: 10px;
+    border-radius: 15px;
+    width: 830px;
+    padding: 10px;
+    font-size: 1.5em;
+    height: 50px;
+}
+
+.button-cek{
+    border-radius: 30px;
+    width: 850px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #177dff;
+}
+
+.button-cek:hover{
+    border-color: var(--color-green);
+    color: var(--color-green);
+    background: transparent;
+
+
+}
+
+.button-cek h2{
+    color: var(--color-bakground-white);
+}
+
+.button-cek h2:hover{
+    color: var(--color-green);
+}
+
+@media screen and (max-width : 768px) {
+
+    .card-cek {
+        background-color: #123261;
+        color: var(--color-bakground-white);
+        padding: 15px;
+        border-radius: 15px;
+        width: 400px;
+        display: flex;
+        border: solid;
+        justify-content: center;
+    }
+
+    .card-cek h2 {
+        color: whitesmoke;
+    }
+
+    .input-name {
+        margin-top: 10px;
+        border-radius: 15px;
+        width: 400px;
+        padding: 10px;
+        font-size: 1.5em;
+        height: 50px;
+    }
+
+    .button-cek{
+        border-radius: 30px;
+        width: 430px;
+        height: 50px;
+        margin-top: 10px;
+        background-color: #177dff;
+    }
+    
+    .button-cek:hover{
+        border-color: var(--color-green);
+        color: var(--color-green);
+        background: transparent;
+    
+    }
+}
+
+@media screen and (max-width : 425px) {
+
+    .card-cek {
+        background-color: #123261;
+        color: var(--color-bakground-white);
+        padding: 15px;
+        border-radius: 15px;
+        width: 350px;
+        display: flex;
+        border: solid;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .card-cek h2 {
+        color: whitesmoke;
+    }
+
+    .input-name {
+        margin-top: 10px;
+        border-radius: 15px;
+        width: 350px;
+        padding: 10px;
+        font-size: 1.5em;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .button-cek{
+        border-radius: 30px;
+        width: 30px;
+        height: 50px;
+        margin-top: 10px;
+        background-color: #177dff;
+    }
+    
+    .button-cek:hover{
+        border-color: var(--color-green);
+        color: var(--color-green);
+        background: transparent;
+    
+    }
+}
+
+/* ========== END STATUS KELULUSAN */
