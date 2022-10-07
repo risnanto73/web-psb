@@ -606,7 +606,7 @@ body {
     height: 50px;
 }
 
-.button-cek{
+.button-cek {
     border-radius: 30px;
     width: 850px;
     height: 50px;
@@ -614,7 +614,7 @@ body {
     background-color: #177dff;
 }
 
-.button-cek:hover{
+.button-cek:hover {
     border-color: var(--color-green);
     color: var(--color-green);
     background: transparent;
@@ -622,11 +622,11 @@ body {
 
 }
 
-.button-cek h2{
+.button-cek h2 {
     color: var(--color-bakground-white);
 }
 
-.button-cek h2:hover{
+.button-cek h2:hover {
     color: var(--color-green);
 }
 
@@ -656,19 +656,19 @@ body {
         height: 50px;
     }
 
-    .button-cek{
+    .button-cek {
         border-radius: 30px;
         width: 430px;
         height: 50px;
         margin-top: 10px;
         background-color: #177dff;
     }
-    
-    .button-cek:hover{
+
+    .button-cek:hover {
         border-color: var(--color-green);
         color: var(--color-green);
         background: transparent;
-    
+
     }
 }
 
@@ -700,20 +700,79 @@ body {
         padding: 10px;
     }
 
-    .button-cek{
+    .button-cek {
         border-radius: 30px;
         width: 30px;
         height: 50px;
         margin-top: 10px;
         background-color: #177dff;
     }
-    
-    .button-cek:hover{
+
+    .button-cek:hover {
         border-color: var(--color-green);
         color: var(--color-green);
         background: transparent;
-    
+
     }
 }
 
 /* ========== END STATUS KELULUSAN */
+
+/* ========== IT FEST ========== */
+.collection-itfest {
+    background: var(--color-bakground-white);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.collection-itfest h2 {
+    color: black;
+    font-size: 2.5em;
+    margin: 0px 0px 0px 20px;
+}
+
+.collection-itfest-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.collection-itfest-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.collection-itfest-card:hover {
+    box-shadow: 0 0 15px #bbb;
+}
+
+.image-box {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.image-box img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.image-box:hover img {
+    transform: scale(1.2);
+}
+
+.collection-card h3 {
+    color: black;
+    font-weight: bold;
+    margin: 5px 0 10px 20px;
+    text-align: left;
+}
+
+/* ========== END IT FEST ========== */
